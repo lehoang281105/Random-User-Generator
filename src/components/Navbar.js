@@ -2,7 +2,6 @@ import React from "react";
 import "./Navbar.css";
 import {
   RiBookOpenLine,
-  RiCopyrightFill,
   RiCopyrightLine,
   RiHeartLine,
   RiHomeSmileLine,
