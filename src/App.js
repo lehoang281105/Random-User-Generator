@@ -1,7 +1,9 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, React } from "react";
 import "./App.css";
 import axios from "axios";
 import Button from "./components/button";
+import Navbar from "./components/Navbar";
+
 const App = () => {
   const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -57,6 +59,9 @@ const App = () => {
   };
   return (
     <div className="App">
+      <div className="Nav">
+        <Navbar />
+      </div>
       <h1> Random User Generator</h1>
       <Button isActive={activeUser} clicked={onClickHandler} />
       {loading ? (
